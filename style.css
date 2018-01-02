@@ -1,0 +1,351 @@
+@font-face {font-family:"Distant Galaxy Alternate";src:url("DISTGA__.eot?") format("eot"),url("DISTGA__.woff") format("woff"),url("DISTGA__.ttf") format("truetype"),url("DISTGA__.svg#DistantGalaxyAlternate") format("svg");font-weight:normal;font-style:normal;}
+
+
+
+@keyframes homeanime {
+                      0%  {background-image: url("gallimg.jpeg");}
+                      50% {background-image: url("gallimgp.jpeg");}
+                      70% {background-image: url("gallimgq.jpeg");}
+                      100%{background-image: url("gallimg.jpeg");}
+}
+
+@keyframes slidehome {
+                      from {margin-left: 100%; width: 300%;}
+                      to   {margin-left: 0%; width: 100%;}
+}
+
+@keyframes fleetanime {
+                       0%  {background-image: url("fleetlogo.jpg");}
+                       50% {background-image: url("repubfo.jpg");}
+                       70% {background-image: url("repubft.jpg");}
+                       100%{background-image: url("fleetlogo.jpg");}
+}
+
+@keyframes homeFlip {
+			0%   {transform: rotateY(0deg);}
+			5%  {transform: rotateY(180deg);}
+			50%  {transform: rotateY(0deg);}
+			55%  {transform: rotateY(180deg);}
+}
+
+@keyframes fleetShow {
+			0%  {transform: rotateY(0deg);}
+			15% {transform: rotateY(180deg);}
+			40% {transform: rotateY(0deg);}
+}
+
+body {
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcAhbuyz3AUcX2niXsq9F6aZaNGD6-WYt83dasORz8pdkNs7I6iA");
+      background-size: cover;
+      margin: 0;
+}
+
+#top {
+  height: 8%;
+  width: 100%;
+  margin: 0;
+  font-family: 'Distant Galaxy Alternate';
+  font-size: 45px;
+  color: #FFFF00;
+  text-align: center;
+}
+
+.bottom {
+         display: inline-block;
+}
+
+#left {
+       height: 92%;
+       padding: 0;
+       margin: 0;
+       width: 10%;
+       font-family: 'Distant Galaxy Alternate';
+       float: left;
+       position: fixed;
+}
+
+.menu {
+       display: block;
+       color: #FF0000;
+       width: 100%;
+       height: 5%;
+       font-size: x-large;
+       text-align: right;
+}
+
+.menu:hover {
+             background-color: #FFFF00;
+             cursor: pointer;
+}
+
+.nav {
+      text-decoration: none;
+      color: #000000;
+}
+
+#home {
+       background-image: url("galrep.jpg");
+       background-size: cover;
+       height: 92%;
+       width: 90%;
+       float: right;
+}
+
+#homep {
+        animation-name: slidehome;
+        animation-duration: 3s;
+	animation-delay: 3s;
+}
+
+hr {
+    height: 3px;
+    color: #FFFFOO;
+    background-color: #FFFF00;
+    width: 100%;
+}
+
+.home_title {
+             font-family: 'Distant Galaxy Alternate';
+             color: #FFFF00;
+             font-size: x-large;
+             padding: 2px;
+             width: 100%;
+	     display: block;
+}
+
+.home_text {
+            font-size: large;
+            color: #FFFF00;
+            font-family: Arial;
+}
+
+.homePhotos {
+	width: 100%;
+	height: 50%;
+	position: relative;
+}
+
+.card {
+	perspective: 1000px;
+	width: 100%;
+	height: 100%;
+	margin: 53px;
+	position: relative;
+	display: block;
+}
+
+.flipper {
+	width: 20%;
+	height: 100%;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: 1s;
+	animation-name: homeFlip;
+	animation-iteration-count: infinite;
+	animation-duration: 20s;
+	border: 2px solid white;
+	display: inline-block;
+	margin-left: 10px;
+}
+
+#flipper1 {
+	animation-delay: 0.2s;
+}
+
+#flipper2 {
+	animation-delay: 0.4s;
+}
+
+#flipper3 {
+	animation-delay: 0.6s;
+}
+
+.back {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	backface-visibilty: hidden;
+	transform: rotateY(180deg);
+}
+
+.front {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	backface-visibilty: hidden;
+}
+
+#flipper1f {
+		background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc5xHvUh0TlpJ8rpMf_p2bGtwmOFXlrdeUGftm-QEeGiAFjsYE");
+		background-size: cover;
+}
+
+#flipper1b {
+		background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX62RSBEBZnkxQIMqZgHlqRQU6mhx7_kDqd7JuZ4kLvt7xSjnNfw");
+		background-size: cover;
+}
+
+#flipper2f {
+		background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6Er9U_l9c090IwG1Ngna1b5BSxvFNrahGj3A9It0RexG8YBhsnw");
+		background-size: cover;
+}
+
+#flipper2b {
+		background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5YWIUwC0jftSg9a7Ao5jIJoISTbf0JCp4bsyOovUiLXfIEQq0");
+		background-size: cover;
+}
+
+#flipper3f {
+		background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhTt3gogBD_ZeLdT9OThukse4rVS6jA7hHFtvexqMnVtmaX9x75Q");
+		background-size: cover;
+}
+
+#flipper3b {
+		background-image: url("https://www.google.co.in/imgres?imgurl=https%3A%2F%2Fpm1.narvii.com%2F6469%2F0692cad0582122f492c69a479b7142d2dbbc7ed5_hq.jpg&imgrefurl=https%3A%2F%2Faminoapps.com%2Fpage%2Fstar-wars%2F5400574%2Fgalactic-republic-canon&docid=-SgWfgmmoXhGiM&tbnid=7tuVPNYGVpv6eM%3A&vet=10ahUKEwj-s5WurLnYAhVBLo8KHe6RANA4ZBAzCCsoKDAo..i&w=1024&h=1024&bih=662&biw=1366&q=galactic%20republic&ved=0ahUKEwj-s5WurLnYAhVBLo8KHe6RANA4ZBAzCCsoKDAo&iact=mrc&uact=8");
+		background-size: cover;
+}
+
+#flipper4f {
+		background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2zd5ObdyM463xR0cznJbBXi1LbaDBn9lwsAsaDivSnTSpAAi9Cg");
+		background-size: cover;
+}
+
+#flipper4b {
+		background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ77lkhTEDQ_qO2zCax6IOdY8ZARA8C75YZ6jl_evyDJvECgdDyYw");
+		background-size: cover;
+}
+
+#gallery {
+           background-image: url("gallimg.jpeg");
+           background-size: cover;
+           height: 92%;
+           width: 90%;
+           float: right;
+
+}
+
+.gallPics {
+	   animation-name: homeanime;
+           animation-duration: 10s;
+           animation-iteration-count: infinite;
+	   background-size: cover;
+	   border: 2px solid yellow;
+	   height: 60%;
+	   width: 60%;
+	   display: block;
+	   margin-top: 70px;
+	   margin-left: 250px;
+}
+ 
+#fleet {
+        background-image: url("fleetlogo.jpg");
+        background-size: cover;
+        height: 92%;
+        width: 90%;
+        float: right;
+        animation-name: fleetanime;
+        animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+
+#fleetGall {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.fleetTile {
+	width: 18%;
+	height: 25%;
+	border: 2px solid white;
+	perspective: 1000px;
+}
+
+.fleetFlip {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transform: 1s;
+	transform-style: preserve-3d;
+	animation-name: fleetShow;
+	animation-duration: 8s;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	border: 2px solid yellow;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+.fleetFront {
+	backface-visibility: hidden;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.fleetBack {
+	backface-visibility: hidden;
+	transform: rotateY(180deg);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	font-size: x-large;
+}
+
+.fleetName {
+	margin: 55px;
+}
+
+#missions {
+           background-image: url("jedilogo.jpg");
+           background-size: cover;
+           height: 92%;
+           width: 90%;
+           float: right;
+}
+
+.jedi {
+       margin: 2%;
+       border: 2px solid yellow;
+       width: 96%;
+       height: 22%;
+       background-size: cover;
+       font-family: 'Distant Galaxy Alternate';
+       color: #FFFF00;
+       font-size: x-large;
+       display: block;
+}
+
+.hov { 
+      height: 100%;
+      width: 100%;
+      display: block;
+      opacity: 0;
+      transition-property: opacity;
+      transition-duration: 0.5s;
+}
+
+.hov:hover {
+            opacity: 1;
+            cursor: pointer;
+}
+
+.jedi:hover {
+             opacity: 0.9;
+}
+
+#jedi1 {
+        background-image: url("yoda.jpg");
+}
+
+#jedi2 {
+        background-image: url("luke.jpg");
+}
+
+#jedi3 {
+        background-image: url("obi.jpg");
+}
+
